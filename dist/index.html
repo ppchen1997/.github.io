@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 前端期末報告</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="cirlces">
+  <div class="circleGreen1"></div>
+  <div class="circleGreen2"></div>
+  <div class="circleYellow1"></div>
+  <div class="circleYellow2"></div>
+</div>
+<div class="panels">
+  <div class="panel whitePanel">
+    <h2 class="title">服務學習心得產生器</h2>
+    <h6 class="subtitle">僅供娛樂，拿來交作業一概不負責唷！</h6>
+    <div class="buttons">
+      <textshow>服務地點：</textshow>
+      <textarea id="input1" row="1"></textarea>
+    </div>
+    <div class="buttons">
+      <textshow>服務對象：</textshow>
+      <textarea id="input2" row="1"></textarea>
+    </div>
+    <div class="symbol">♥</div>
+    <div class="buttons">
+      <button class="buttonOne">抒情版</button>
+      <button class="buttonTwo">溫馨版</button>
+    </div>
+    <div class="buttons">
+      <button class="buttonThree">反思版</button>
+      <button class="buttonFour">真誠版</button>
+    </div>
+  </div>
+  <div class="panel rightPanel">
+    <h4 class="list">剛出爐的心得在這ㄦ～</h4>
+    <textarea id="output"> </textarea>
+    <div class="buttons">
+      <button class="buttonTwo E">複製內文</button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
