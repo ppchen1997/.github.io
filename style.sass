@@ -1,0 +1,170 @@
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: sans-serif
+  bprder: 1px solid
+body,html
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #c42727
+  overflow: hidden
+  .panels
+    z-index: 2
+    width: 80%
+    display: flex
+    .panel  
+      flex: 1
+      border-radius: 10px
+      box-shadow: 0 0 20 pxrgba(#6b0d0d,.8)
+      padding: 20px
+      &.whitePanel
+        background-color: white
+        .title
+          color: #132260
+          height: 40px
+          letter-spacing: 1.5px
+          font-weight: 500
+          text-align: center
+          line-height: 40px
+          border-radius: 25px
+          
+          
+        .subtitle
+          color: #132260
+          font-weight: 400
+          margin-bottom: 20px
+          text-align: center
+        textshow
+          width: 60px
+          height: 20px
+          flex-shrink: 0
+          margin: auto
+          //border: solid 1px #132260
+          //background-color: #eaeaea
+          color: #132260
+          font-size: 8pt
+          
+        textarea
+          flex-grow: 1
+          border-radius: 5px
+          height: 40px
+          background-color: #eaeaea
+          border: none
+          outline: none
+          padding: 15px
+          display: flex
+          justify-content: flex-end
+          &:focus
+            border: solid 1px #132260
+        .symbol
+          text-align: center
+          font-size: 20pt
+          color: #eaeaea
+          margin-top: 10px
+        .buttons
+          width: 100%
+          display: flex
+          justify-content: space-between
+          margin-top: 10px
+          
+          button
+            width: 47%
+            border-radius: 10px
+            height: 35px
+            border: none
+            background-color: #132260
+            letter-spacing: 1.5px
+            margin-top: 0px
+            color: white
+            outline: none
+            &:active
+              border: none
+              filter: brightness(.8)
+          .buttonTwo
+            background-color: #c42727
+          .buttonThree
+            background-color: #c42727
+          .buttonFour
+            background-color: #132260
+            
+          
+            
+      &.rightPanel
+        background-color: #132260
+        .list
+          color: white
+          text-align: center
+          letter-spacing: 3px
+          height: 40px
+          line-height: 35px
+          //border-bottom: solid 1px white
+          opacity: .8
+        textarea
+          border-radius: 10px
+          width: 100%
+          height: 230px
+          background-color: #1e3597
+          border: none
+          outline: none
+          display: flex
+          color: white
+          opacity: .6
+          
+          &:focus
+            border: solid 1px #132260
+        .buttons
+          width: 100%
+          display: flex
+          justify-content: center
+          margin-top: 15px
+          button
+            width: 47%
+            border-radius: 10px
+            height: 25px
+            border: none
+            background-color: #132260
+            letter-spacing: 1.5px
+            color: #132260
+            outline: none
+            &:active
+              border: none
+              filter: brightness(.8)
+          .buttonTwo
+            background-color: #e2b83b
+        
+          
+
+.circleGreen1,.circleGreen2,.circleYellow1,.circleYellow2
+  border-radius: 50%
+  position: absolute
+  z-index: 1
+ 
+  &.circleGreen1
+    width: 250px
+    height: 250px
+    background-color: #005b29
+    left: 100px
+    top: 500px
+  &.circleGreen2
+    width: 150px
+    height: 150px
+    background-color: #005b29
+    left: 500px
+    top: 40px
+  &.circleYellow1
+    width: 200px
+    height: 200px
+    background-color: #e2b83b
+    left: -50px
+    top: 140px
+  &.circleYellow2
+    width: 150px
+    height: 150px
+    background-color: #e2b83b
+    left: 600px
+    top: 370px
+    
